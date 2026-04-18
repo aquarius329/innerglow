@@ -49,7 +49,15 @@ bubble.addEventListener("click", () => {
   // rather than inline styles for better performance
   triggerPulse();
 });
+function startGame() {
+  document.getElementById("home").classList.remove("active");
+  document.getElementById("game").classList.add("active");
+}
 
+function goHome() {
+  document.getElementById("game").classList.remove("active");
+  document.getElementById("home").classList.add("active");
+}
 function triggerPulse() {
   bubble.classList.remove("tap-animate");
   void bubble.offsetWidth; // This "magic line" triggers a reflow to restart animation
