@@ -3,39 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InnerGlow | Wellness</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <title>InnerGlow ✨</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="glow-bg"></div>
+    <div class="glow-bg"></div>
 
-<main class="app-container">
-    <header class="header">
-        <h1 class="logo">InnerGlow</h1>
-        <p class="subtitle">Relax your mind, one tap at a time</p>
-    </header>
-
-    <section class="glass-card">
-        <div class="interaction-area">
-            <div id="bubble" class="pulse-element"></div>
-            <p id="message">Tap to release stress 🌿</p>
-        </div>
-
-        <div class="stats-row">
-            <div class="stat-pill">
-                <span class="icon">✨</span>
-                <span id="coins">0</span>
+    <main class="app-viewport">
+        
+        <section id="home" class="screen active">
+            <header class="top">
+                <h1>InnerGlow ✨</h1>
+                <p>Your calm space 💖</p>
+            </header>
+            
+            <div class="card">
+                <p class="intro-text">Take a moment for yourself today. Ready to begin?</p>
+                <button class="btn-primary" onclick="startGame()">Start Relaxing</button>
             </div>
-        </div>
+        </section>
 
-        <footer class="card-footer">
-            <p class="hint">Breathe… you're safe here 💖</p>
-        </footer>
-    </section>
-</main>
+        <section id="game" class="screen">
+            <header class="top">
+                <h2>InnerGlow</h2>
+                <p>Tap your stress away 🌿</p>
+            </header>
 
-<script src="script.js"></script>
+            <div class="card">
+                <div id="bubble"></div>
+                <p id="message">Tap to relax</p>
+                
+                <div class="stats-row">
+                    <div class="stat-pill">✨ <span id="coins">0</span></div>
+                </div>
+
+                <button class="btn-secondary" onclick="goHome()">← Back</button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
