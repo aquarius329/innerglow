@@ -217,4 +217,22 @@ body {
   0% { transform: scale(1); }
   50% { transform: scale(0.92); }
   100% { transform: scale(1); }
+}.screen {
+  display: none;
+  text-align: center;
+}
+
+.active {
+  display: block;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: #ff9aa2;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
 }
