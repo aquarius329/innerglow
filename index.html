@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>InnerGlow</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HOME -->
+<div id="home" class="screen active">
+  <h1>InnerGlow ✨</h1>
+  <p>Your calm, safe space 💖</p>
+  <button onclick="showScreen('game')">Start</button>
+  <button onclick="showScreen('shop')">Shop</button>
+</div>
+
+<!-- GAME -->
+<div id="game" class="screen">
+  <h2>Tap your stress away 🌿</h2>
+  <div id="bubble"></div>
+  <p id="message">Tap to relax</p>
+  <p>💰 Coins: <span id="coins">0</span></p>
+  <div id="companion">😊</div>
+  <button onclick="showScreen('home')">Back</button>
+</div>
+
+<!-- SHOP -->
+<div id="shop" class="screen">
+  <h2>Reward Shop 🛍️</h2>
+  <p>💰 Coins: <span id="coins2">0</span></p>
+
+  <button onclick="buyTheme('dark')">Unlock Dark Theme (10 coins)</button>
+  <button onclick="buyTheme('dream')">Unlock Dream Theme (20 coins)</button>
+
+  <button onclick="showScreen('home')">Back</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
